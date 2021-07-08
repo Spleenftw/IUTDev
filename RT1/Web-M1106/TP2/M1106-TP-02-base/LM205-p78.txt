@@ -1,0 +1,35 @@
+LIBS & MODULES LANGAGE C
+
+Développement rapide d'applications GTK+ avec GLADE
+Christophe BORELLY
+[Professeur de l'ENSAM – IUT de Béziers]
+
+MOTS-CLÉS: GLADE, RAD (RAPID APPLICATION DEVELOPMENT), XML, GTK+, PROGRAMMATION C
+
+Glade [3] est un outil de développement rapide d'applications GTK+ et il
+permet de réaliser graphiquement à la souris l'essentiel de l'interface
+utilisateur. Je vais donc vous présenter son fonctionnement et ce qu'il
+apporte au niveau programmation.
+
+Si vous avez suivi les épisodes précédents [1][2] présentant les bases de la programmation en C d'une
+application graphique avec la librairie GTK+, vous vous êtes sans doutes aperçu que cela peut devenir un
+peu fastidieux parfois et qu'il fallait utiliser 5, 6 voir 10 lignes pour paramétrer un élément graphique. Bien sûr
+il y a toujours la possibilité d'écrire des fonctions génériques ou bien des macros, mais cela prend également
+un peu de temps pour faire les choses comme il faut. Une autre alternative quand elle existe (et là ça tombe
+bien, c'est la cas !) est d'utiliser un outil qui va générer le paramétrage que l'on a besoin.
+Vous allez donc découvrir dans ce qui suit, le rôle et l’intérêt de glade qui existe malgré tout depuis 1998.
+Au moment où j'écris ces lignes, la dernière version de glade est la 3.20.0 du 22 mars 2016 et nécessite au
+moins la version 3.20 de GTK+. Mais il faut savoir que si vous voulez pouvoir utiliser les widgets de GTK+3, il
+vous faudra une version de glade supérieure à la version 3.10. Par exemple, avec Mint 17.3, il n'y a pas de
+problèmes car la version de glade est la 3.16.1. Ce qui donne accès aux éléments graphiques des versions
+inférieures ou égales à GTK+ 3.10.
+Un autre exemple sur mon système slackware 64 « current », la version de glade est la 3.8.5 et je n'ai accès
+qu'aux éléments des versions inférieures à GTK+ 2.24 (voir menu préférences ou Ctrl+P). Seulement ce
+système comporte bien une version de GTK+3 (la 3.18.9 pour être précis). Il m'a donc fallut recompiler glade
+en version 3.19.0 (l'avant dernière mouture, pour éviter d'avoir aussi GTK+3 à mettre à jour) pour obtenir le
+support de GTK+3 jusqu'à la version 3.16.
+
+GNU/Linux Magazine France N°205
+http://www.gnulinuxmag.com
+
+Ce document est la propriété exclusive de la société IUT BEZIERS - BIBLIOTHEQUE jusqu'à 5 lecteurs

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>JavaScript JQuery</title>
+    <meta charset="utf-8" />
+    <script src="jquery-3.5.1.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <p class="warn" id="p1">Hello</p>
+    <img id="img1" src="logoUM-100x100.png" />
+    <button id="btn">Change Text</button>
+    <script>
+        $(document).ready(function() {
+            $("#p1").attr("class", "ok");
+            var src1 = $("#img1").attr("src");
+            $("#img1").attr("title", "Logo de l'UM");
+            $("#btn").click(cbChange);
+        });
+        var i = 0;
+        var text;
+        var tab = ['logoUM-100x100.png', 'logoIUT-100x50.png', 'logoRT-252x50.png'];
+
+        function cbChange() {
+            if (i % 2 == 0) $("#p1").addClass("ok").removeClass("warn");
+            else $("#p1").addClass("warn").removeClass("ok");
+            $("#img1").attr("src", tab[i % 3]);
+            text = $("#p1").html();
+            console.log("Old text : " + text);
+            $("#p1").html("Click " + i);
+            i++;
+        }
+    </script>
+</body>
+
+</html>

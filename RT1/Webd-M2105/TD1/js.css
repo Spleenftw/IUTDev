@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+    background-color: #eee;
+    margin: 10px auto;
+}
+
+.combi {
+    width: 30%;
+    margin: 2px auto;
+    border: thin solid pink;
+    border-radius: 10px;
+}
+
+.bp {
+    color: blue;
+    font-size: 150%;
+    padding: 5px;
+}
+
+.mp {
+    color: red;
+    font-size: 150%;
+    padding: 5px;
+}
+
+button {
+    font-size: 150%;
+    margin: 10px auto;
+    padding: 5px;
+}
+
+.rouge {
+    background-color: #FF0000;
+}
+
+.jaune {
+    background-color: #FFFF00;
+}
+
+.vert {
+    background-color: #00FF00;
+}
+
+.bleu {
+    background-color: #0000FF;
+}
+
+.orange {
+    background-color: #FFA500;
+}
+
+.blanc {
+    background-color: #FFFFFF;
+}
+
+.violet {
+    background-color: #9932CC;
+}
+
+.fuchsia {
+    background-color: #FF00FF;
+}

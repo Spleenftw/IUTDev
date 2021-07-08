@@ -1,0 +1,11 @@
+body{
+  background-color:white;
+  text-align:center;
+}
+span.vide {background-color:orange;}
+span {margin:5px;padding:2px;background-color:yellow;}
+p {margin:0;padding:1px;}
+div {margin:5px auto;padding:10px;border:thin solid pink;width:50%;}
+.err {background-color:red;}
+.ok {background-color:green;}
+

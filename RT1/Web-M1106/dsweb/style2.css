@@ -1,0 +1,67 @@
+table {
+    margin: auto;
+    border-spacing: 0;
+    border: 4px solid red;
+    border-radius: 1px;
+}
+
+td {
+    margin: 0;
+    padding: 4px;
+    border: thin solid black;
+}
+
+th {
+    margin: 0;
+    padding: 4px;
+    border: thin solid black;
+    background-color: white;
+}
+
+.center {
+    text-align: center;
+}
+
+.rang {
+    color: green;
+}
+
+.note {
+    color: blue;
+    font-weight: bold;
+    font-size: 120%;
+}
+
+.ligne1 {
+    background-color: #FCCFF0;
+}
+
+.ligne2 {
+    background-color: #FFF8C6;
+}
+
+.lastligne {
+    font-weight: bold;
+    font-size: 120%;
+    text-align: right;
+}
+
+.moyenne {
+    color: #B722B7;
+}
+
+.ligne1:hover {
+    background-color: red;
+}
+
+.ligne2:hover {
+    background-color: red;
+}
+
+.triASC {
+    color: green;
+}
+
+.triDESC {
+    color: blue;
+}

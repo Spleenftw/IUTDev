@@ -1,0 +1,114 @@
+/* {
+    witdh: 100px;
+    float: right;
+}
+
+.img img { 
+    height: 200px;
+    width: 200px;
+    border-left-style: solid;
+    margin-top: 1px;
+    margin-right: 1000px;
+    border-left-width: 0px;
+}
+
+*/
+
+.firsttitle {
+    color:white;
+    font-size:25px;
+    vertical-align:middle;
+    line-height: 100px;
+    background-color:#5bb7e7;
+    height: 100px;
+    border-bottom-style:solid;
+    border-width: 5px;
+    border-bottom-color:#003e68;
+}
+
+.secondtitle {
+    font-weight: bolder;
+}
+
+.point {
+    color:#003e68;
+    line-height: 7px;
+}
+
+.grey {
+    background-color:grey;
+    height:355px;
+    color:white;
+    padding-left:-25px;
+    border-radius: 0px 0px 0px 10px;
+}
+
+.espace {
+    line-height: 5px;
+}
+
+@font-face {
+    font-family: 'CenturyGothicStd';
+    src: url('./fonts/CenturyGothicStd/3099F9_2_0.eot');
+    src: url('./fonts/CenturyGothicStd/3099F9_2_0.eot?#iefix') format('embedded-opentype'),
+        url('./fonts/CenturyGothicStd/3099F9_2_0.woff2') format('woff2'),
+        url('./fonts/CenturyGothicStd/3099F9_2_0.woff') format('woff'),
+        url('./fonts/CenturyGothicStd/3099F9_2_0.ttf') format('truetype');
+
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: CenturyGothicStd, "Century Gothic", CenturyGothic, AppleGothic, "Glyphicons Halflings", sans-serif;
+}
+
+h1 {
+    text-align: right;
+    font-size:15pt;
+}
+
+#a {
+    font-weight:100;
+    color:#000043;
+    position: absolute;
+    top:130px;
+    right:130px;
+}
+
+#b {
+    font-weight:900;
+    font-size: 28pt;
+    color:#000043;
+    position: absolute;
+    top:140px;
+    right:50px;
+}
+
+#c {
+   font-weight:100;
+   color:#000043;
+   position: absolute;
+   top: 190px;
+   right:50px;
+}
+
+#d {
+    position:absolute;
+    right:170px;
+    top:120px;
+    width:6%;
+}
+
+.span1 {
+    color:white;
+    line-height: 7px;
+    text-align:right;
+}
+
+
+.span2 {
+    color:#003e68;
+    line-height: 7px;
+    text-align:right;
+}

@@ -1,0 +1,1 @@
+console.log("Début du programme JS...")

@@ -1,0 +1,7 @@
+toto:titi
+tata:tutu
+titi:titi
+tutu:torototo
+riri:rara
+fifi:lolo
+lili:toto

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>TP5-1.3 AJAX-FETCH</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="tp5.css" />
+    <script src="jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+    <h1>TP5 AJAX-FETCH - Question 1.3</h1>
+    <button id="start" />AJAX</button>
+    <div id="content"></div>
+    <span id="msg"></span>
+    <!-- <script type="text/javascript">
+        function cblog(msg) {
+            $("#msg").append("<br/>" + msg);
+        }
+        $(document).ready(function() {
+            $("#start").click(function() {
+                var request = new XMLHttpRequest();
+                request.onreadystatechange = function() {
+                    if (request.readyState === 4 && request.status === 200) {
+                        var type = request.getResponseHeader("Content-Type");
+                        if (type.match(/application\/json/)) {
+                            cblog("AJAX OK...<br/>" + request.responseText);
+                            var jsonObj = JSON.parse(request.responseText);
+                        }
+                    }
+                }
+                request.open("GET", "https://cbSlack.borelly.net/~u21901737/ajax/wsJSON.php");
+                request.onerror = function() {
+                    cblog("Erreur AJAX...");
+                };
+                request.send();
+            });
+        });        
+    </script> -->
+
+    <script>
+        function cblog(msg) {
+            $("#msg").append("<br/>" + msg);
+        }
+        $.ajax({
+            url: "http://10.205.20.1/mesures.php",
+            dataType: "json"
+        }).done(function(jsonObj) {
+            cblog("AJAX OK...<br/>" + JSON.stringify(jsonObj));
+        }).fail(function() {
+            cblog("AJAX ERROR !!!");
+        });
+
+        // fetch('https://cbSlack.borelly.net/~u21901737/ajax/wsJSON.php')
+        //     .then(response => response.json())
+        //     .then(jsonObj => {
+        //         cblog('Fetch OK...<br/>' + JSON.stringify(jsonObj) + '<h1 > Nombre de vélo totaux :</h1>' + jsonObj.intensity + '<h1> Date :</h1>' + jsonObj.dateObserved + '<h1>Longitude : </h1>' + jsonObj.location + '<h1>Latitude : </h1>' + jsonObj.coordinates);
+        //     })
+        //     .catch(error => {
+        //         cblog('Erreur Fetch...<br/>' + error)
+        //     });
+    </script>
+
+</body>
+
+</html>

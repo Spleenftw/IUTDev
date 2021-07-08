@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p>page</p>
+    <button onclick="alert('salut');" />OK</button>
+    <!--<p onmouseover="alert('salut')">page</p>-->
+    <script>
+        console.log("Hello world! intégré");
+    </script>
+    <!-- <script src="test.js"></script> on appelle le fichier test.js -->
+
+    <!-- var i;
+var sum = 3.14;
+var j,k,l;-->
+
+    <!-- var x="toto";
+x=x+"titi"; //x vaut tototiti 
+
+var y=x.length; donne la longueur de la chaine de caractères-->
+
+    <!-- Créer un tableau
+
+    <script>
+        console.log("premier tableau");
+        var tab = ["bob", "alice", "olive", "banane"];
+        for (k in tab) {
+            console.log("User(" + k + ") = " + tab[k]);
+        }
+    </script>  -->
+
+    <!-- Une autre manière de faire un tableau -->
+
+    <!-- <script>
+        console.log("second tableau");
+        var tab = ["bob", "alice", "olive", "banane"];
+        tab.forEach(function(val, i) {
+            console.log("User(" + i + ") = " + val);
+        });
+    </script> -->
+
+
+    <!-- fonction pour additioner a + b 
+    <script>
+        function calcul(a, b) {
+            return a + b;
+        }
+    </script> -->
+
+    <!--  fonction pour mettre autant de valeur que l'on veut sans préciser dans le tableau
+    <script>
+        console.log("troisième tableau");
+
+        function test() {
+            var i;
+            for (i = 0; i < arguments.length; i++) {
+                console.log("arg(" + i + ")=" + arguments[i]);
+            }
+        }
+        test(1, 2, 3);
+        test('a', 'bnbn', 3.15, 8787, 'rr', 'yyy');
+    </script> -->
+
+    <!-- petite boite de confirmation, ok / cancel
+    <script>
+        confirm("test ?");
+    </script>  -->
+
+    <!-- Boite de lecture -->
+    <script>
+        var n = prompt("Votre prénom ?", "");
+        console.log("Bonjour " + n);
+    </script>
+
+    <!-- données du navigateur -->
+    <script>
+        console.log("Données du navigateur :")
+        console.log("navigator.language : " + navigator.language);
+        console.log("navigator.userAgent : " + navigator.userAgent);
+        console.log("window.innerWidth x window.innerHeight : " + window.innerWidth + "x" + window.innerHeight);
+        console.log("screen.width x screen.height : " + screen.width + "x" + screen.height);
+        console.log("history.len : " + history.len);
+        console.log("location.href : " + location.href);
+    </script>
+</body>
+
+</html>

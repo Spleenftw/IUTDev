@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="js.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MasterMind</title>
+</head>
+<div>Code : <span id="code"></span></div>
+<button onclick="newCode();newCombi();">Nouvelle partie</button>
+
+<div id="game"> </div>
+
+<body>
+
+    <script>
+        var c = 0;
+        var colors = ["rouge", "jaune", "vert", "bleu", "orange", "blanc", "violet", "fuchsia"];
+
+        var tab = [0, 0, 0];
+        var combi = [0, 0, 0];
+        console.log("Code : " + tab.toString());
+
+
+        newCode();
+
+        function newCombi() {
+            var game = document.getElementById("game");
+            var d = document.createElement("div");
+            game.appendChild(d);
+
+            for (i in tab) {
+
+                var b = document.createElement("button");
+                b.innerHTML = 0;
+                b.setAttribute("onclick", "changecolor(this, " + i + ");");
+                d.appendChild(b);
+            }
+
+            var s = document.createElement("span");
+            s.setAttribute("class", "bp");
+            s.innerHTML = "-";
+            d.appendChild(s);
+
+            var s = document.createElement("span");
+            s.setAttribute("class", "mp");
+            s.innerHTML = "-";
+            d.appendChild(s);
+
+            var b = document.createElement("button");
+            b.innerHTML = "ok";
+            d.appendChild(b);
+        }
+
+
+
+        function changecolor(btn, index) {
+            btn.innerHTML = combi[index];
+            btn.setAttribute("class", colors[combi[index]]);
+            combi[index]++;
+            combi[index] %= colors.length;
+        }
+
+        function newCode() {
+            for (i in tab) {
+                var v = Math.floor(8 * Math.random());
+                tab[i] = v;
+            }
+
+            console.log("random one : " + tab);
+            var span = document.getElementById("code");
+            span.innerHTML = tab;
+        }
+    </script>
+
+</body>
+
+</html>

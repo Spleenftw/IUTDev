@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="xml.css"?>
+
+
+<personnes>
+    <personne id="20140123" title="id1">
+    <prenom color="blue">John</prenom>
+    <nom>DOE</nom>
+    </personne>
+    <!-- Ceci est un commentaire -->
+    <personne2 id="20140321" title="id2">
+    <prenom color="red">Jane</prenom>
+    <nom>ROE</nom>
+    </personne2>
+</personnes>
+
+
+<!--
+<racine
+xmlns:a="http://www.iutbeziers.fr/xxx"
+xmlns:b="http://www.iutbeziers.fr/yyy">
+<a:list>
+<a:id>1234</a:id>
+<a:id>4321</a:id>
+</a:list>
+<b:list>
+<b:id>toto</b:id>
+<b:id>titi</b:id>
+</b:list>
+</racine>
+-->
